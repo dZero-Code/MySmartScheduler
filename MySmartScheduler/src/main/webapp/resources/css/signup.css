@@ -1,0 +1,118 @@
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: '777Balsamtint'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* Basic */
+@media screen and (max-width: 480px) {
+   html, body {min-width: 320px;}
+}
+
+body {
+   height: 100vh;
+   background: url("../images/back.png") no-repeat center/cover;
+      
+}
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+   -moz-animation: none !important;
+   -webkit-animation: none !important;
+   -ms-animation: none !important;
+   animation: none !important;
+   -moz-transition: none !important;
+   -webkit-transition: none !important;
+   -ms-transition: none !important;
+   transition: none !important;
+}
+
+/* type */
+body, input, select, textarea {
+   font-family: '777Balsamtint'
+   font-size: 16pt;
+   font-weight: 300;
+   line-height: 1.65;
+}
+
+input[type="text"], input[type="password"] {
+   height: auto;          /* 높이 초기화 */ 
+   line-height: normal;    /* line-height 초기화 */ 
+   padding: .8em .5em;    /* 여백 설정 */ 
+}
+
+.login{
+   width: 50%;
+   max-width: 500px;
+   min-width: 320px;
+   min-height: 500px;
+   margin: 0 auto;
+   margin-top: 15%;
+}
+
+@media screen and (max-width: 480px) {
+   #main{width:100%;}
+   .login{width: 90%;}
+}
+
+#login_header{
+   text-align: center;
+   font-size: 2em;
+   color: #260A00;
+   font-family: 'BMEULJIRO'
+}
+.labelbox{
+   margin-left: 1em;
+   color:#B29D83;
+   font-family: '777Balsamtint'
+}
+
+#chk_email, #chk_pw, #chk_rePw, #chk_login, #chk_nickName, 
+#chk_pwEqual, #ano_email, #form_email, #form_pw{
+   display: none;
+   color: red;
+   
+}
+
+#able_email{
+   display: none;
+   color: green;
+}
+
+.textbox {
+   position: relative;
+   margin: 1em;
+   font-family: '777Balsamtint'
+} 
+.textbox label {
+   position: absolute; top: 1px; /* input 요소의 border-top 설정값 만큼 */ 
+   left: 1px; /* input 요소의 border-left 설정값 만큼 */ 
+   padding: 1.7em .5em; /* input 요소의 padding 값 만큼 */ 
+   color: #B29D83; cursor: text; 
+} 
+.textbox input[type="text"], .textbox input[type="password"] {
+   width: 100%; 
+   height: 2.6em;
+   font-family: '777Balsamtint'
+   font-size: 1em;
+   border: 1px solid #B29D83;
+   background: #FFFAFA;
+   border-radius: 5px;
+   outline-style: none;
+   -webkit-appearance: none; 
+   -moz-appearance: none; appearance: none;
+}
+
+
+#btn_register, #btn_cancel, #btn_login, #btn_signup{
+   margin-top: 1em;
+   border-radius: 5px;
+   width: calc(100% / 2);
+   height: 2.5em;
+}
+
+.textbox button{
+   border: 1px solid #F1D8CB;
+   background-color: #FFFAFA;
+   border: 1px solid #B29D83;
+   color: #B29D83;
+   padding: 5px;
+   font-family: '777Balsamtint';
+   font-size: 15px;
+}

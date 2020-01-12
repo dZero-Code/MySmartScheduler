@@ -1,0 +1,71 @@
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: '777Balsamtint'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* Basic */
+@media screen and (max-width: 480px) {
+   html, body {min-width: 320px;}
+}
+
+body {
+   height: auto;
+   background: url("../images/errorPage.png");
+   background-size: 1900px 1200px;
+}
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+   -moz-animation: none !important;
+   -webkit-animation: none !important;
+   -ms-animation: none !important;
+   animation: none !important;
+   -moz-transition: none !important;
+   -webkit-transition: none !important;
+   -ms-transition: none !important;
+   transition: none !important;
+}
+
+/* type */
+body, input, select, textarea {
+   font-family: '777Balsamtint';
+   font-size: 16pt;
+   font-weight: 300;
+   line-height: 1.65;
+   color: #B29D83;
+   font-family: '777Balsamtint'
+   
+}
+
+.errorPage{
+   width: 200px;
+   min-height: 100px;
+   margin: 0 auto;
+   margin-top: 500px;
+}
+
+@media screen and (max-width: 480px) {
+   #main{width:100%;}
+   .login{width: 75%;}
+}
+
+.textbox {
+   position: relative;
+   margin: 1em;
+   font-family: '777Balsamtint'
+} 
+.textbox span {
+	text-align: center;
+	font-size: 28px;
+   	color: #B29D83; 
+   	font-family: '777Balsamtint';
+   	color: #260A00;
+} 
+
+.textbox a {
+	font-size: 28px;
+   	color: #B29D83; 
+   	font-family: '777Balsamtint';
+   	color: #260A00;
+   	text-decoration: none;
+}
+
+.textbox a:hover {
+	color: #260A00;
+}

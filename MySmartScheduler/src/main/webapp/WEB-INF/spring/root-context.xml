@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<value>classpath:com/kic/team4/resource/db.properties</value>
+		</property>
+	</bean>
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="${driver}" />
+		<property name="url" value="${url}" />
+		<property name="username" value="${username}" />
+		<property name="password" value="${password}" />
+	</bean>
+	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<!-- 로그인 Mapper -->
+	<bean class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.kic.team4.login.model.LoginMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactoryBean" />
+	</bean>
+	
+	<!-- 회원가입 Mapper -->
+	<bean class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.kic.team4.signup.model.SignupMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactoryBean" />
+	</bean>
+	
+	<!-- todo Mapper -->
+	<bean class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.kic.team4.todo.model.TodoMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactoryBean" />
+	</bean>
+	
+	<!-- 그룹 Mapper -->
+	<bean class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.kic.team4.group.model.GroupMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactoryBean" />
+	</bean>
+	
+	<!-- Calendar Mapper -->
+	<bean class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.kic.team4.calendar.model.CalendarMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactoryBean" />
+	</bean>
+</beans>

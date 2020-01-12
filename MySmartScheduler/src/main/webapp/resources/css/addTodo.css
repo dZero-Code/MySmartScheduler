@@ -1,0 +1,54 @@
+.pop_box .pop_contents{
+	position:absolute;
+	width:400px;height:300px;
+	border:1px solid #403821;
+	background-color: #FFECD5;
+	padding:30px; 
+	color: #B39E84;
+}
+
+.pop_box .pop_contents .div_cont .textbox{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.pop_box .pop_contents .div_cont .textbox input[type="text"],
+.pop_box .pop_contents .div_cont .textbox textarea{
+	width:382px;
+	height: 40px;
+	border-radius: 5px;
+	border:1px solid black;
+	background: #FFF2C9;
+	padding:0px;
+	font-size: 18px;
+}
+.pop_box .pop_contents .div_cont .textbox textarea{
+	resize: none;
+	height: 80px;
+}
+
+.pop_box .pop_contents .div_cont .textbox #start_reg,
+.pop_box .pop_contents .div_cont .textbox #finish_reg{
+	width:174px;
+}
+
+.pop_box .pop_contents .div_cont{
+	height:250px;
+}
+
+.pop_box .pop_contents .div_btn{
+	height:50px;
+}
+
+.pop_box .pop_contents .div_btn{
+	margin-top: 20px;
+	text-align: center;
+}
+.pop_box .pop_contents .div_btn .pop_btn{
+	margin-right: 10px;
+	width: 186px;
+	height: 30px;
+	background: #FFF2C9;
+	border: 1px solid #403821;
+	border-radius: 5px;
+}

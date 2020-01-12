@@ -1,0 +1,197 @@
+@font-face { font-family: '777Balsamtint'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+/*************************  Basic  **************************/
+body {-ms-overflow-style: scrollbar;background: #fff;}
+	@media screen and (max-width: 480px) {
+		html, body {min-width: 320px;}
+	}
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+/*************************  Basic  **************************/
+
+/*************************  Type  **************************/
+body {
+	background-color: #fff;
+	color: #776062;
+}
+
+a{
+	color: #776062;
+}
+
+body, input, select, textarea {
+	font-family: '777Balsamtint';
+	font-size: 16pt;
+	font-weight: 300;
+	line-height: 1.65;
+}
+
+	@media screen and (max-width: 1680px) {
+		body, input, select, textarea {
+			font-size: 16px;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		body, input, select, textarea {
+			font-size: 12px;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		body, input, select, textarea {
+			font-size: 12px;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		body, input, select, textarea {
+			font-size: 10px;
+		}
+	}
+
+	@media screen and (max-width: 640px) {
+		body, input, select, textarea {
+			font-size: 8px;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		body, input, select, textarea {
+			font-size: 8px;
+		}
+
+	}
+/*************************  Type  **************************/
+
+
+/*************************  Header  **************************/
+#header{
+	background: #B29D83;
+	width: 100%;
+	height: 50px;
+}
+#header .option {
+	position:relative;
+	list-style: none;
+	width:40%;
+	top: 12px;
+	left : 85px;
+}
+
+#header .option li {
+	margin-left: 1em;
+}
+
+#header .option li a {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	font-size: 24px;
+	font-family: 'BMEULJIRO'
+}
+#header .user_info {
+	position:relative;
+	list-style: none;
+	text-align: right;
+	right: 15px;
+	top: -10px;
+}
+
+#header .user_info li {
+	float:right;
+	margin-left: 1em;
+}
+
+#header .user_info li a {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	font-size: 24px;
+}
+
+/*************************  Header  **************************/
+
+
+/*************************  Content  **************************/
+/* Main */
+#main {
+	background: #f1f1f1;
+	width: 100%;
+}
+
+/* Menu */
+#menu{
+	background: #B29D83;
+	width: 70px;
+	float: left;
+	min-height: 150vh;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	padding : 12px;
+}
+
+#menu ul li a {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	font-size: 35px;
+}
+	#menu ul li a:hover {
+		color: #ffffff;
+	}
+
+	#menu ul li a.active {
+		color: #ffffff;
+	}
+
+/* Content */
+#contents{
+	float: left;
+	width: calc(100% - 80px);
+	background: #fffff0;
+	min-height: 150vh;
+}
+/*************************  Content  **************************/
+
+
+/*************************  Popup  **************************/
+.pop_box{
+	display:none;
+	position:fixed;
+	top:0;left:0;
+	width:100%;height:100%;
+	z-index:100;
+}
+.pop_box .pop_bg{
+	position:absolute;
+	top:0;left:0;
+	width:100%;height:100%;
+	background:#000;
+	opacity:.6;
+	filter:alpha(opacity=60);
+}
+.pop_box .pop_contents{
+	position:absolute;
+	top:50%;left:50%;
+	width:400px;height:300px;
+	border:1px solid #B29D83;
+	background-color: #FFECD5;
+	padding:30px;
+	color: #403821;
+}
+
+/*************************  Popup  **************************/

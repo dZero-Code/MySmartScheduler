@@ -1,0 +1,51 @@
+@font-face { font-family: '777Balsamtint'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.pop_box .pop_contents .div_cont{
+	height:250px;
+}
+
+.pop_box .pop_contents .div_btn{
+	height:50px;
+}
+.pop_box .pop_contents .div_cont .title {
+	margin-top: -5px;
+	text-align: center;
+	font-size: 35px;
+	font-family: '777Balsamtint';
+}
+.pop_box .pop_contents .div_cont .content {
+	margin-top: 30px;
+	font-size: 25px;
+	text-align: center;
+	height:50px;
+	font-family: '777Balsamtint';
+}
+.pop_box .pop_contents .div_cont .reg {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 25px;
+	font-family: '777Balsamtint';
+}
+
+.pop_box .pop_contents .div_cont .priority {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 25px;
+	font-family: '777Balsamtint';
+}
+.pop_box .pop_contents .div_btn{
+	margin-top: 20px;
+	text-align: center;
+	bottom: 0px;
+	font-family: '777Balsamtint';
+}
+.pop_box .pop_contents .div_btn .pop_btn{
+	width: 180px;
+	height: 40px;
+	font-size:25px;
+	background: none;
+	border: 1px solid #403821;
+	border-radius: 5px;
+	z-index: 10000;
+	font-family: '777Balsamtint';
+}
